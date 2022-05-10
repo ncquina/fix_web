@@ -22,11 +22,11 @@ Login To CC Website
     ${wait4}=    Evaluate    random.randint(5, 11)    random
     
     Click Element                    ${CCWEB_LoginLink}
-    Sleep    ${wait1}s
+#    Sleep    ${wait1}s
     Input Text                       ${CCWEB_LoginEmail}    ${email}
-    Sleep    ${wait2}s
+#    Sleep    ${wait2}s
     Input Password                   ${CCWEB_LoginPassword}    ${password}
-    Sleep    ${wait3}s
+#    Sleep    ${wait3}s
     Wait Until Element Is Visible    ${CCWEB_LoginBtn}    ${wait4}s
     # Wait Until Element Is Visible    ${CCWEB_LoginBtn}   
     # Press Keys    ${CCWEB_LoginPassword}    ENTER
@@ -40,15 +40,17 @@ Login To CC Website Invalid
     ${wait3}=    Evaluate    random.randint(5, 11)    random
     ${wait4}=    Evaluate    random.randint(5, 11)    random
     Click Element                    ${CCWEB_LoginLink}
-    Sleep    ${wait1}s
+#    Sleep    ${wait1}s
     Input Text                       ${CCWEB_LoginEmail}    ${email}
-    Sleep    ${wait2}s
+#    Sleep    ${wait2}s
     Input Password                   ${CCWEB_LoginPassword}    ${password}
-    Sleep    ${wait3}s
+#   Sleep    ${wait3}s
     Wait Until Element Is Visible    ${CCWEB_LoginBtn}    ${wait4}s
     # Press Keys    ${CCWEB_LoginPassword}    ENTER
     Click Element                    ${CCWEB_LoginBtn}
-    Wait Until Page Contains         ${CCWEB_LoginErrorMessage}
+    
+    Wait Until Element Is Visible         ${CCWEB_LoginErrorMessage}    ${wait4}s
+    Click Element                    ${CCWEB_LoginErrorMessage}    
     
 Verify If User Is Logged In
     [Arguments]                      ${verify_username}

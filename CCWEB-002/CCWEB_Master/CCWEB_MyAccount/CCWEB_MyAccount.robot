@@ -15,12 +15,13 @@ Resource      MyAccount_Keywords.resource
 #Verify if Digital Member Card number and barcode is correct
 #Numbers of: All Orders, Processing, Shipped Out/Picked Up/Reviews/Wishlist/Tickets
 
-Verify If User Can Access My Account
-    [Tags]    Smoke
-    Open CC Website
-    Login To CC Website                                ${login_email}    ${login_pw}    ${login_username}
-    # Wait Until Element Is Visible                      ${login_username}    5
-    
+#Verify If User Can Access My Account
+#    [Tags]    Smoke
+#    Open CC Website
+#    Login To CC Website                                ${login_email}    ${login_pw}    ${login_username}
+#    Wait Until Element Is Visible                      ${account_barcode}    5
+Verify MyAccount Page Response Time
+    Wait Until Element is Visible                      ${MyAccount_DigitalCard}    5
 Verify If Your Orders Is Visible in My Account
     [Tags]    Smoke
     Wait Until Element Is Visible                      ${MyAccount_OrderHistory}    5

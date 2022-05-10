@@ -4,7 +4,7 @@
 
 #setup
 ${url}                                         https://www.canadacomputers.com/
-# ${url}                                         https://dev5.canadacomputers.com/
+#${url}                                         https://dev5.canadacomputers.com/
 ${browser}                                     chrome
 
 
@@ -38,7 +38,9 @@ ${CCWEB_LoginBtn}                             //*[@id="btn-login"]
 ${CCWEB_LoginUserBtn}                         //*[@id="userLogin"]/div/div[7]/a
 ${CCWEB_LoginProfile}                         //*[@id="profile"]/div[1]/div[1]/div/div[2]/div[2]
 ${CCWEB_LoginViaUsername}                     //*[@id="check-out"]/div[2]/div[1]/div[2]/button
-${CCWEB_LoginErrorMessage}                    No match for User Name or Password
+${CCWEB_LoginErrorMessage}                    //*[@id="cboxClose"]
+#No match for User Name or Password
+#${CCWEB_LoginErrorButton}                     //*[@id="cboxClose"]
 
 #Search
 ${CCWEB_SearchBar}                            //*[@id="cc_quick_search"]
