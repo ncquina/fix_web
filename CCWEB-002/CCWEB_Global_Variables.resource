@@ -63,7 +63,8 @@ ${ProductDetails_AddToWishlist}               //*[@id="pi-form"]/div[1]/div[3]/a
 ${CCWEB_AcceptCookies}                        //*[@id="privacy-btn"]
 
 #Nav
-${Nav_ShopProducts}                           //*[@id="header-shop"]/div/div/div[3]/div[1]/div[1]/a
+#${Nav_ShopProducts}                           //*[@id="header-shop"]/div/div/div[3]/div[1]/div[1]/a
+${Nav_ShopProducts}                            //html/body/header/div[2]/div/div/div[3]/div[1]/div[1]/a
 ${Nav_Cart}                                   //*[@id="header-search"]/div/div[3]/div/div[4]
 ${Nav_YourAccount}                            //*[@id="header-search"]/div/div[3]/div/div[1]/div/a[1]/div
 ${Nav_YourAccount_MyAccount}                  //*[@id="header-search"]/div/div[3]/div/div[1]/div/div/ul/li[1]/a
