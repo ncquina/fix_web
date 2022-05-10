@@ -8,7 +8,7 @@ ${ProductList_FilterToggle}         //*[@id="filter-toggle-section"]/div/button/
 ${ProductList_FilterSideBar}        //*[@id="filters"]
 
 
-${Category}                         //a[contains(text(),'Laptops, Tablets & Accessories')]
+${Category}                         //a[contains(text(),'Laptops, Tablets &amp; Accessories')]
 ${Selected_Category}                Laptops, Tablets & Accessories
 ${Selected_Subcategory}             Gaming Laptops
 
