@@ -74,7 +74,8 @@ Navigate Category and Subcategory
     
 Click Category
     [Arguments]                      ${Selected_Category}
-    Mouse Over                       //a[contains(text(),'${Selected_Category}')]
+    #Mouse Over                       //a[contains(text(),'${Selected_Category}')]
+    Mouse Over                        //html/body/header/div[2]/div/div/div[3]/div[1]/div[2]/div/div[1]/div/ul/li[4]/a
     
 Click Subcategory
     [Arguments]                      ${Selected_Subcategory}
